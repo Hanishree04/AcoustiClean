@@ -31,7 +31,7 @@ AcoustiClean/
 
 ---
 
-## ✨ Key Features
+# ✨ Key Features
 
 ### 1️⃣ Noise Removal
 - Uses audio filtering + ML-based denoising
