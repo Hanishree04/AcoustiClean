@@ -26,6 +26,7 @@ AcoustiClean/
 │
 └── tmp/
     └── audioclean_temp   # Temporary folder for intermediate audio outputs
+```
 
 # ✨ Key Features
 
@@ -81,43 +82,43 @@ AcoustiClean/
 
 ## 🔧 Backend Setup
 
+```bash
 python -m venv venv
-
 venv\Scripts\activate
-
 pip install -r requirements.txt
-
 cd backend
-
 uvicorn app:app --reload --host 0.0.0.0 --port 8000
+```
 
 ## 🔧 Frontend Setup
 
+```bash
 cd frontend
-
 npm install
-
 npm start
+```
 
 # 📌 Usage Flow
 
 1. Upload an audio file (WAV / MP3)
+
 2. Choose one of the four processing modes
+
 3. Backend processes the file
+
 4. Download output(s):
 
    * Cleaned audio
    * Vocal-only or music-only
    * Separated components
    * Transcription text file
+
 5. Temporary files are auto-cleared after processing
 
 # 📜 Future Enhancements
 
-* 🚀 Faster AI processing with full GPU acceleration
-* 🌐 Real-time audio processing
-* 🗣️ Multi-language transcription support
-* 🎯 Higher accuracy in separation, diarization, and noise cleaning
-* 📊 Web-based project dashboard
-
-t dashboard
+* Faster AI processing with full GPU acceleration
+* Real-time audio processing
+* Multi-language transcription support
+* Higher accuracy in separation, diarization, and noise cleaning
+* Web-based project dashboard
