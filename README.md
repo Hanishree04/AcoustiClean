@@ -32,14 +32,12 @@ AcoustiClean/
 ---
 
 # ✨ Key Features
-
-### 1️⃣ Noise Removal
+1️⃣ Noise Removal
 - Uses audio filtering + ML-based denoising
 - Removes background hiss, hum, static, and wind noise
 
 ---
-
-### 2️⃣ Vocal and Non-Vocal Separation
+2️⃣ Vocal and Non-Vocal Separation
 - Separates:
   - 🎤 Vocals
   - 🎵 Instrumental (music)
@@ -47,7 +45,7 @@ AcoustiClean/
 
 ---
 
-### 3️⃣ Audio Source Separation & Merging
+3️⃣ Audio Source Separation & Merging
 - Extracts multiple speakers or instruments
 - Allows:
   - Selecting specific components (e.g., Speaker 1, Speaker 2)
@@ -56,7 +54,7 @@ AcoustiClean/
 
 ---
 
-### 4️⃣ Speech Transcription
+4️⃣ Speech Transcription
 - Converts speech to text using **OpenAI Whisper**
 - Supports:
   - Speaker diarization (who spoke when)
