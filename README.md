@@ -27,8 +27,6 @@ AcoustiClean/
 └── tmp/
     └── audioclean_temp   # Temporary folder for intermediate audio outputs
 
-
-
 # ✨ Key Features
 
 ## 1️⃣ Noise Removal
@@ -83,21 +81,23 @@ AcoustiClean/
 
 ## 🔧 Backend Setup
 
-```bash
 python -m venv venv
+
 venv\Scripts\activate
+
 pip install -r requirements.txt
+
 cd backend
+
 uvicorn app:app --reload --host 0.0.0.0 --port 8000
-```
 
 ## 🔧 Frontend Setup
 
-```bash
 cd frontend
+
 npm install
+
 npm start
-```
 
 # 📌 Usage Flow
 
@@ -119,4 +119,5 @@ npm start
 * 🗣️ Multi-language transcription support
 * 🎯 Higher accuracy in separation, diarization, and noise cleaning
 * 📊 Web-based project dashboard
+
 t dashboard
