@@ -29,60 +29,59 @@ AcoustiClean/
 
 
 
----
-
 # ✨ Key Features
-1️⃣ Noise Removal
-- Uses audio filtering + ML-based denoising
-- Removes background hiss, hum, static, and wind noise
 
----
-2️⃣ Vocal and Non-Vocal Separation
-- Separates:
-  - 🎤 Vocals
-  - 🎵 Instrumental (music)
-- Useful for karaoke, remix production, and music analysis
+## 1️⃣ Noise Removal
 
----
+* Uses audio filtering + ML-based denoising
+* Removes background hiss, hum, static, and wind noise
 
-3️⃣ Audio Source Separation & Merging
-- Extracts multiple speakers or instruments
-- Allows:
-  - Selecting specific components (e.g., Speaker 1, Speaker 2)
-  - Merging selected components into a new audio file
-- Uses **Demucs + custom processing** for multi-source separation
+## 2️⃣ Vocal and Non-Vocal Separation
 
----
+* Separates:
 
-4️⃣ Speech Transcription
-- Converts speech to text using **OpenAI Whisper**
-- Supports:
-  - Speaker diarization (who spoke when)
-  - Multi-speaker transcription
-- Ideal for meetings, podcasts, and interviews
+  * 🎤 Vocals
+  * 🎵 Instrumental (music)
+* Useful for karaoke, remix production, and music analysis
 
----
+## 3️⃣ Audio Source Separation & Merging
 
-## 🛠️ Technologies Used
+* Extracts multiple speakers or instruments
+* Allows:
 
-### 🔹 Backend (FastAPI)
-- Python 3.x
-- FastAPI
-- PyDub
-- Librosa
-- OpenAI Whisper
-- NumPy / SciPy
+  * Selecting specific components (e.g., Speaker 1, Speaker 2)
+  * Merging selected components into a new audio file
+* Uses **Demucs + custom processing** for multi-source separation
 
-### 🔹 Frontend (React.js)
-- React + Hooks
-- Fetch API for backend communication
-- Custom UI for uploading and downloading audio
+## 4️⃣ Speech Transcription
 
----
+* Converts speech to text using **OpenAI Whisper**
+* Supports:
 
-## 🚀 How to Run the Project
+  * Speaker diarization (who spoke when)
+  * Multi-speaker transcription
+* Ideal for meetings, podcasts, and interviews
 
-### 🔧 Backend Setup
+# 🛠️ Technologies Used
+
+## 🔹 Backend (FastAPI)
+
+* Python 3.x
+* FastAPI
+* PyDub
+* Librosa
+* OpenAI Whisper
+* NumPy / SciPy
+
+## 🔹 Frontend (React.js)
+
+* React + Hooks
+* Fetch API for backend communication
+* Custom UI for uploading and downloading audio
+
+# 🚀 How to Run the Project
+
+## 🔧 Backend Setup
 
 ```bash
 python -m venv venv
@@ -90,48 +89,34 @@ venv\Scripts\activate
 pip install -r requirements.txt
 cd backend
 uvicorn app:app --reload --host 0.0.0.0 --port 8000
+```
 
-### 🔧 Frontend Setup
+## 🔧 Frontend Setup
 
+```bash
 cd frontend
 npm install
 npm start
+```
 
+# 📌 Usage Flow
 
+1. Upload an audio file (WAV / MP3)
+2. Choose one of the four processing modes
+3. Backend processes the file
+4. Download output(s):
 
-📌 Usage Flow
+   * Cleaned audio
+   * Vocal-only or music-only
+   * Separated components
+   * Transcription text file
+5. Temporary files are auto-cleared after processing
 
-Upload an audio file (WAV / MP3)
+# 📜 Future Enhancements
 
-Choose one of the four processing modes
-
-Backend processes the file
-
-Download output(s):
-
-Cleaned audio
-
-Vocal-only or music-only
-
-Separated components
-
-Transcription text file
-
-Temporary files are auto-cleared after processing
-
-
-
-
-
-
-📜 Future Enhancements
-
-🚀 Faster AI processing with full GPU acceleration
-
-🌐 Real-time audio processing
-
-🗣️ Multi-language transcription support
-
-🎯 Higher accuracy in separation, diarization, and noise cleaning
-
-📊 Web-based project dashboard
+* 🚀 Faster AI processing with full GPU acceleration
+* 🌐 Real-time audio processing
+* 🗣️ Multi-language transcription support
+* 🎯 Higher accuracy in separation, diarization, and noise cleaning
+* 📊 Web-based project dashboard
+t dashboard
